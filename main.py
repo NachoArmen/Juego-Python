@@ -3,4 +3,4 @@ print("¡¡Comienza tu aventura!!")
 
 print("Elige tu personaje")
 
-
+Guerrero = Personaje()
