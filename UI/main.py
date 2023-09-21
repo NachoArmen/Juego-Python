@@ -1,5 +1,5 @@
 ##Inicio de Fantasy Battle Quest
-from Personaje import Personaje
+from Datos.Personaje import Personaje
 
 print("¡¡Comienza tu aventura!!")
 
