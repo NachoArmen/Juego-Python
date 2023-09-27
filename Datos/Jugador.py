@@ -2,16 +2,16 @@
 
 import pygame, assets
 
-WIDTH = 900
+WIDTH = 1200
 HEIGHT = 700
-
+BLACK = 0,0,0
 
 pygame.init()
 pygame.display.init()
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Fantasy Battle Quest")
 clock= pygame.time.Clock()
-BACKGROUND = pygame.image.load("../assets/bg_jungle.jpg")
+
 class Jugador(pygame.sprite.Sprite):
 
 
@@ -81,7 +81,7 @@ while running:
     all_sprites.update()
 
     # Draw / Render
-    screen.convert(BACKGROUND)
+    screen.fill(BLACK)
     all_sprites.draw(screen)
     # *after* drawing everything, flip the display.
     pygame.display.flip()
